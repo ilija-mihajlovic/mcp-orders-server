@@ -1,0 +1,125 @@
+[
+  {
+    "id": "ord-1001",
+    "customer": "Ana Kovac",
+    "items": [
+      { "title": "The Little Prince", "quantity": 1, "unitPrice": 18.9 }
+    ],
+    "status": "delivered",
+    "total": 18.9,
+    "createdAt": "2026-01-08T10:15:00Z"
+  },
+  {
+    "id": "ord-1002",
+    "customer": "Marko Jovanovic",
+    "items": [
+      { "title": "Dune", "quantity": 1, "unitPrice": 29.5 },
+      { "title": "Neuromancer", "quantity": 1, "unitPrice": 24.0 }
+    ],
+    "status": "shipped",
+    "total": 53.5,
+    "createdAt": "2026-01-12T14:20:00Z"
+  },
+  {
+    "id": "ord-1003",
+    "customer": "Lejla Hadzic",
+    "items": [
+      { "title": "Pride and Prejudice", "quantity": 2, "unitPrice": 16.75 }
+    ],
+    "status": "processing",
+    "total": 33.5,
+    "createdAt": "2026-01-16T09:05:00Z"
+  },
+  {
+    "id": "ord-1004",
+    "customer": "Petar Maric",
+    "items": [
+      { "title": "Clean Code", "quantity": 1, "unitPrice": 32.0 }
+    ],
+    "status": "cancelled",
+    "total": 32.0,
+    "createdAt": "2026-01-21T16:40:00Z"
+  },
+  {
+    "id": "ord-1005",
+    "customer": "Sara Ilic",
+    "items": [
+      { "title": "The Hobbit", "quantity": 1, "unitPrice": 21.25 },
+      { "title": "The Name of the Wind", "quantity": 1, "unitPrice": 27.75 }
+    ],
+    "status": "delivered",
+    "total": 49.0,
+    "createdAt": "2026-02-02T11:30:00Z"
+  },
+  {
+    "id": "ord-1006",
+    "customer": "Emir Basic",
+    "items": [
+      { "title": "Sapiens", "quantity": 1, "unitPrice": 25.9 }
+    ],
+    "status": "processing",
+    "total": 25.9,
+    "createdAt": "2026-02-07T13:12:00Z"
+  },
+  {
+    "id": "ord-1007",
+    "customer": "Nina Vukovic",
+    "items": [
+      { "title": "Atomic Habits", "quantity": 1, "unitPrice": 23.4 }
+    ],
+    "status": "shipped",
+    "total": 23.4,
+    "createdAt": "2026-02-11T08:50:00Z"
+  },
+  {
+    "id": "ord-1008",
+    "customer": "Dario Selimovic",
+    "items": [
+      { "title": "A Brief History of Time", "quantity": 1, "unitPrice": 26.8 },
+      { "title": "Cosmos", "quantity": 1, "unitPrice": 28.2 }
+    ],
+    "status": "delivered",
+    "total": 55.0,
+    "createdAt": "2026-02-18T17:25:00Z"
+  },
+  {
+    "id": "ord-1009",
+    "customer": "Maja Peric",
+    "items": [
+      { "title": "The Midnight Library", "quantity": 1, "unitPrice": 22.5 }
+    ],
+    "status": "processing",
+    "total": 22.5,
+    "createdAt": "2026-02-23T12:00:00Z"
+  },
+  {
+    "id": "ord-1010",
+    "customer": "Luka Stojanovic",
+    "items": [
+      { "title": "Project Hail Mary", "quantity": 1, "unitPrice": 30.6 }
+    ],
+    "status": "cancelled",
+    "total": 30.6,
+    "createdAt": "2026-03-01T10:45:00Z"
+  },
+  {
+    "id": "ord-1011",
+    "customer": "Jelena Zoric",
+    "items": [
+      { "title": "Educated", "quantity": 1, "unitPrice": 24.75 }
+    ],
+    "status": "delivered",
+    "total": 24.75,
+    "createdAt": "2026-03-05T15:10:00Z"
+  },
+  {
+    "id": "ord-1012",
+    "customer": "Filip Krstic",
+    "items": [
+      { "title": "The Design of Everyday Things", "quantity": 1, "unitPrice": 31.2 }
+    ],
+    "status": "processing",
+    "total": 31.2,
+    "createdAt": "2026-03-09T09:35:00Z"
+  }
+]

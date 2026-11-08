@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MCP Orders Server Inspector</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="brand"><svg aria-hidden="true" viewBox="0 0 48 48"><path d="M9 8h20a10 10 0 0 1 10 10v12a10 10 0 0 1-10 10H19l-10 6V8Z"/><path d="m17 23 5 5 11-12"/></svg><span>orders / MCP</span></div>
+      <div class="hero-copy"><p class="eyebrow">Custom MCP server demo</p><h1>Connect your order data to an AI assistant.</h1><p class="lede">A compact, inspectable example of the tools, resources, prompts, auth, and operational detail a custom integration can expose.</p><button id="guided-demo" class="primary" type="button">Run guided demo</button></div>
+      <div class="hero-stat"><strong id="tool-count">0</strong><span>tools ready</span></div>
+    </header>
+    <section class="traffic card" aria-labelledby="traffic-heading"><div class="section-heading"><div><p class="eyebrow">Live observability</p><h2 id="traffic-heading">Protocol traffic</h2></div><button id="clear-traffic" class="quiet" type="button">Clear</button></div><div id="traffic-list" class="traffic-list"><p class="muted">Call a method to see raw JSON-RPC traffic here.</p></div></section>
+    <nav class="tabs" aria-label="Inspector sections"><button class="tab active" data-tab="tools" type="button">Tools</button><button class="tab" data-tab="resources" type="button">Resources</button><button class="tab" data-tab="prompts" type="button">Prompts</button><button class="tab" data-tab="audit" type="button">Audit log</button></nav>
+    <section id="tools-panel" class="panel active"><div class="section-heading"><div><p class="eyebrow">Actions</p><h2>Available tools</h2></div><span id="server-state" class="pill">Loading</span></div><div id="tools" class="grid"><p class="muted">Loading tools...</p></div></section>
+    <section id="resources-panel" class="panel"><div class="section-heading"><div><p class="eyebrow">Read only data</p><h2>Resources</h2></div></div><div id="resources" class="grid"><p class="muted">Loading resources...</p></div></section>
+    <section id="prompts-panel" class="panel"><div class="section-heading"><div><p class="eyebrow">Reusable context</p><h2>Prompts</h2></div></div><div id="prompts" class="grid"><p class="muted">Loading prompts...</p></div></section>
+    <section id="audit-panel" class="panel"><div class="section-heading"><div><p class="eyebrow">Safety and traceability</p><h2>Audit log</h2></div></div><div id="audit" class="audit-list"><p class="muted">No tool calls yet.</p></div></section>
+    <section class="service card"><p class="eyebrow">The useful part</p><h2>What you get with this service</h2><ul><li>Tools wired to your API or database</li><li>Authentication and safe transport configuration</li><li>Input validation and predictable error handling</li><li>Tests for the protocol and business rules</li><li>Deployment notes for your environment</li><li>Documentation and a clear handover package</li></ul><div class="plan"><h3>Four step plan</h3><ol><li>Map the data and actions your assistant needs.</li><li>Build the MCP surface around your existing systems.</li><li>Verify auth, validation, edge cases, and observability.</li><li>Document deployment and hand over the working integration.</li></ol></div><p class="note">This page is a minimal hand written demo. A real service uses the official MCP SDK where it is the right fit, together with your system's auth, deployment, and data requirements.</p></section>
+  </main>
+  <template id="tool-template"><article class="card tool-card"><div class="card-title"><div><h3></h3><p class="description"></p></div><span class="tag">tool</span></div><details><summary>Input schema</summary><pre class="schema"></pre></details><label>Arguments as JSON<textarea class="arguments" rows="4">{}</textarea></label><button class="primary" type="button">Call tool</button><pre class="result" aria-live="polite">No result yet</pre></article></template>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
